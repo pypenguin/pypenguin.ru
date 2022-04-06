@@ -23,14 +23,29 @@ email: sergi@pypenguin.ru
 description: >- # this means to ignore newlines until "baseurl:"
   Блог программиста - блог о веб-разработке и не только
 url: "https://pypenguin.ru" # the base hostname & protocol for your site, e.g. http://example.com
+
+# SEO/OpenGraph
+logo: /images/logo.png
+
 #twitter_username: pypenguin
 github_username:  pypenguin
-linkedin_username: 
+linkedin_username: Sergi-Sokolov
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
+webmaster_verifications:
+  google: HvKBHKDi54qaxtKXk71eryWyJDcaQ4-cQQwIEJnnpus
+#  bing: 1234
+#  alexa: 1234
+  yandex: 5c3d3018fe0f4999
+#  baidu: 1234
+
+permalink: none # /:categories/:title:output_ext
 
 # Exclude from processing.
 # The following items will not be processed, by default.
